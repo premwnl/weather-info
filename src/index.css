@@ -1,13 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito:wght@400;700&family=Playfair+Display:wght@700&display=swap");
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: Nunito, sans-serif;
+  background-color: #96c5fa;
+}
+.cont {
+  width: 100vw;
+  height: 90vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  background-color: #0982ce;
+  border-radius: 30px;
+}
+.cont-left,
+.cont-right {
+  height: 90vh;
+  width: 100%;
+}
+.cont-right {
+  background-color: #b5d8ff;
+  border-radius: 30px;
+}
+.left-side,
+.right-side {
+  height: 45vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.left-2 {
+  background-image: url("../public/build.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: 30px;
+}
+h6 {
+  font-weight: 700;
+}
+.right-12 {
+  background-color: #e4f1ff;
+  z-index: 10;
+  height: 30vh;
+  border-radius: 30px;
+}
+.right-22 {
+  background-color: #e4f1ff;
+  z-index: 10;
+  height: 15vh;
+  border-radius: 30px;
+  width: 19vw;
+  overflow: hidden;
+}
+.light {
+  font-size: 8px;
+}
+.light-1 {
+  font-size: 12px;
+}
+h1 {
+  font-size: 50px;
+}
+.progress-1 {
+  position: relative;
+  margin: 4px;
+  float: left;
+  text-align: center;
+}
+
+.barOverflow-1 {
+  /* Wraps the rotating .bar */
+  position: relative;
+  overflow: hidden;
+  width: 90px;
+  height: 45px; /* Half circle (overflow) */
+  margin-bottom: -14px; /* bring the numbers up */
+}
+.bar-1 {
+  position: absolute;
+  top: 0;
+  left: 70%;
+  width: 90px;
+  height: 90px; /* full circle! */
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 5px solid #eee; /* half gray, */
+  border-bottom-color: rgb(46, 46, 238); /* half azure */
+  border-left-color: rgb(46, 46, 238);
+}
+.shadow {
+  transition: all 0.5s;
+}
+.shadow:hover {
+  box-shadow: none !important;
+  transform: 0.8 !important;
+  cursor: pointer;
+}
+.cursor {
+  cursor: pointer;
+}
+.btl {
+  border-top-left-radius: 50px;
+}
+.btr {
+  border-top-right-radius: 50px;
 }
